@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals Collectors!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Game tittle and instructions -->
+    <div id="game-name"><h1>Crystals Collector!</h1></div>
+    <br>
+    <br>
+    <div id="game-rules">
+        <p><b>Instructions:</b></p>
+            <ul>
+                <li>You will be given a random number at the start of the 
+                    game.</li>
+                <li>There are four crystals below. By clicking on a crystal you
+                    will ask a specific amount of points to your total score.</li>
+                <li>You win the game by matching your total score to random
+                    number, you lose the game if your total score goes above
+                    the random number.</li>
+                <li> The value of each crystal is hidden from you until you
+                    click on it.</li>
+                <li>Each time when the game starts, the game will change the
+                    values of each crystal.</li>
+            </ul>
+    
+    </div>
+    <br>
+    <br>
+    <!-- Game stats -->
+    <div id="random-number">Number to Match:&nbsp<span id="target-number"></span></div>
+
+    <div id="score-board">
+        <div id="user-wins">Wins:&nbsp<span id="win-count"></span></div>
+        <div id="user-losses">Losses:&nbsp<span id="losses-count"></span></div>
+    </div>
+    <br>
+    
+    <!-- Crystals -->
+    <div class="crystal-buttons">
+        <button id="button1"><img src="assets/images/crystal-0.jpg" alt="crystal shape 1" class="img-crystal"></button>
+        <button id="button2"><img src="assets/images/crystal-1.jpg" alt="crystal shape 2" class="img-crystal"></button>
+        <button id="button3"><img src="assets/images/crystal-2.jpg" alt="crystal shape 3" class="img-crystal"></button>
+        <button id="button4"><img src="assets/images/crystal-3.jpg" alt="crystal shape 4" class="img-crystal"></button>
+    </div>
+    <br>
+  
+    <div id="sum-score">Score:<span id="totalsum"></span></div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
